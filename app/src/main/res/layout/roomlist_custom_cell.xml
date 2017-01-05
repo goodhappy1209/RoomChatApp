@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="95dp"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:paddingLeft="3dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp">
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:background="#ffffff"
+        android:layout_marginRight="50dp"
+        android:id="@+id/leftPanel"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="false"
+            android:id="@+id/photoLayout"
+            android:layout_alignBottom="@+id/lastCommentLayout"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp">
+
+            <co.roomapp.room.widget.RARoundImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/roomOwnerPhoto"
+                android:src="@drawable/background" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/lastCommentLayout"
+            android:layout_toRightOf="@+id/photoLayout"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:id="@+id/tailLayout"
+                android:layout_alignBottom="@+id/commentBgLayout"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/commentIndicator"
+                    android:src="@drawable/comment_indicator_left" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/commentBgLayout"
+                android:layout_toRightOf="@+id/tailLayout">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/commentFrame"
+                    android:src="@drawable/comment_bg"
+                    android:scaleType="fitXY"
+                    android:layout_alignTop="@+id/lastCommentText"
+                    android:layout_alignBottom="@+id/lastCommentText" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="That sounds good. It&apos;s exciting story"
+                    android:id="@+id/lastCommentText"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:maxHeight="80dp"
+                    android:minHeight="45dp"
+                    android:layout_above="@+id/lastcommentDate"
+                    android:textSize="13sp"
+                    android:maxLines="3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Feburary 1st"
+                    android:id="@+id/lastcommentDate"
+                    android:layout_alignRight="@+id/commentFrame"
+                    android:textSize="12sp"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:layout_marginLeft="50dp"
+        android:background="#ffffff"
+        android:id="@+id/rightPanel"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="4">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton"
+                android:layout_weight="1"
+                android:background="#ffff7c22"
+                android:src="@drawable/mute_off"
+                android:scaleType="center"
+                android:cropToPadding="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton2"
+                android:layout_weight="1"
+                android:background="#ff4783ff"
+                android:cropToPadding="true"
+                android:scaleType="center"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:src="@drawable/add_guests" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton3"
+                android:layout_weight="1"
+                android:background="#ffcbcbcb"
+                android:src="@drawable/settingsoff"
+                android:cropToPadding="true"
+                android:scaleType="center"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton4"
+                android:layout_weight="1"
+                android:background="#ffff0822"
+                android:src="@drawable/clearwhite"
+                android:cropToPadding="true"
+                android:scaleType="center"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:visibility="visible"
+        android:id="@+id/centerPanel"
+        android:background="#ffffff">
+
+        <LinearLayout android:id="@+id/roomThumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/image_bg"
+            android:layout_marginRight="5dip">
+
+            <ImageView
+                android:id="@+id/list_image"
+                android:layout_width="90dip"
+                android:layout_height="90dip"
+
+                android:src="@drawable/tutosr"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/roomTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/roomThumbnail"
+            android:layout_toRightOf="@+id/roomThumbnail"
+            android:text="Rihanna Love the way lie"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="20dip"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/roomCreator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/roomTitle"
+            android:textColor="#343434"
+            android:textSize="15dip"
+            android:layout_marginTop="1dip"
+            android:layout_toRightOf="@+id/roomThumbnail"
+            android:text="Just gona stand there and ..." />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/membersIcon"
+            android:src="@drawable/members"
+            android:layout_below="@+id/roomCreator"
+            android:layout_alignLeft="@+id/roomCreator"
+            android:layout_marginTop="3dip"
+            android:tint="#ff888888" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1088"
+            android:id="@+id/roomUsersCount"
+            android:layout_toRightOf="@+id/membersIcon"
+            android:layout_below="@+id/roomCreator"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:layout_marginTop="3dp" />
+
+        <ImageButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shareicon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:id="@+id/btnShare"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="8dp"
+            android:tint="#ff568aff" />
+    </RelativeLayout>
+
+    <!-- Title Of Song-->
+
+    <!-- Artist Name -->
+
+    <!-- Rightend Duration -->
+
+    <!-- Rightend Arrow -->
+
+</RelativeLayout>

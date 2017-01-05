@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/bgLayout">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#72bffa"
+            android:id="@+id/headerLayout"
+            android:alpha="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/edit_your_profile"
+                android:layout_alignParentTop="false"
+                android:textColor="#ffffffff"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="false"
+                android:layout_centerInParent="true" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/btnBack"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/backbutton"
+                android:scaleType="fitXY"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/headerLayout"
+            android:id="@+id/photoLayout">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/bgPhoto"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView11"
+                android:background="#000000"
+                android:alpha="0.5" />
+
+            <co.roomapp.room.widget.RARoundImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/userPhoto"
+                android:src="@drawable/placeholder"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnTakeSelfie"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/button_snapshot_circle_white_bg"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/photoLayout"
+            android:background="@android:color/white">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edtName"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:gravity="center_horizontal" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnOk"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60dp"
+                android:src="@drawable/icon_ok"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:name="co.roomapp.room.activity.RARegNameBottomMenuFragment"
+        android:layout_height="wrap_content"
+        android:id="@+id/actionMenu"
+        android:layout_alignParentBottom="true">
+    </fragment>
+
+</RelativeLayout>

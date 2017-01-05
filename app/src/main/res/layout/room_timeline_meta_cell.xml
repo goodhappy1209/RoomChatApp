@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="180dp">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:id="@+id/roombg"
+        android:src="@drawable/bg1"
+        android:scaleType="centerCrop"
+        android:alpha="0.3" />
+
+    <co.roomapp.room.widget.RARoundImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/roomOwnerPhoto"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg2" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginRight="55dp"
+        android:layout_toLeftOf="@+id/roomOwnerPhoto">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnMediaAll"
+            android:src="@drawable/allmedia"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="20"
+            android:id="@+id/txtMediaCount"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/btnMediaAll"
+            android:layout_marginBottom="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_toRightOf="@+id/roomOwnerPhoto"
+        android:layout_marginLeft="55dp">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnGuestsAll"
+            android:src="@drawable/allguests"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="1090"
+            android:id="@+id/txtGuestCount"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/btnGuestsAll" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="by Yang Guo"
+        android:id="@+id/txtRoomOwner"
+        android:layout_below="@+id/roomOwnerPhoto"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="3dp" />
+
+</RelativeLayout>

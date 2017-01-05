@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/timelineLayout"
+        android:layout_alignBottom="@+id/timelineLayout"
+        android:id="@+id/rightLayout"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        android:layout_alignLeft="@+id/timelineLayout"
+        android:layout_alignRight="@+id/timelineLayout">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnTimelineSetting"
+            android:src="@drawable/settings_orange"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnTimelineDelete"
+            android:layout_alignLeft="@+id/btnTimelineSetting"
+            android:layout_below="@+id/btnTimelineSetting"
+            android:src="@drawable/clear_orange"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timelineLayout"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/msgThumbLayout"
+            android:background="#ffffff"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="360dp"
+                android:id="@+id/msgThumbnail"
+                android:layout_alignParentTop="true"
+                android:minHeight="80dp"
+                android:visibility="visible"
+                android:src="@drawable/startup_logo"
+                android:scaleType="centerCrop" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/playLayout"
+                android:layout_centerInParent="true">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnPlay"
+                    android:src="@drawable/button_play_video"
+                    android:background="@android:color/transparent" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/msgBgbar"
+                android:src="@drawable/navbar_dark"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/msgMetaLayout">
+
+                <co.roomapp.room.widget.RARoundImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/msgPostUserPhoto"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/bg2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Yang Guo"
+                    android:id="@+id/msgPostUserName"
+                    android:layout_toRightOf="@+id/msgPostUserPhoto"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:maxLines="2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="3 days ago"
+                    android:id="@+id/textView3"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridLayout"
+                android:layout_below="@+id/msgMetaLayout"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <GridView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gridView"
+                    android:numColumns="4"
+                    android:horizontalSpacing="15dp"
+                    android:verticalSpacing="15dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msgThumbLayout"
+            android:id="@+id/msgOverviewLayout"
+            android:background="#ffffff"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/postMsgLayout">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="join my room. I&apos;ll delete you if I don&apos;t want you in there. only 10 people can join. so yeah"
+                    android:id="@+id/postedMsg"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/postedMsg"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/audioLayout"
+                    android:layout_marginTop="10dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnAudioPlay"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/button_play_video"
+                        android:background="@android:color/transparent" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/btnAudioPlay"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="@string/audio_message"
+                            android:id="@+id/textView6"
+                            android:layout_marginTop="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="7.2 sec"
+                            android:id="@+id/durationLabel"
+                            android:layout_marginTop="5dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/postMsgLayout"
+                android:layout_marginTop="25dp"
+                android:visibility="visible"
+                android:id="@+id/commentLayout1">
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/cmtIndicatorLayout"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="1 comment"
+                        android:id="@+id/txtCommentCount"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ff2a4aff"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView5"
+                        android:src="@drawable/more_comment_bg"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="11dp"
+                        android:id="@+id/imageView6"
+                        android:src="@drawable/more_comment_left"
+                        android:layout_alignLeft="@+id/imageView5" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="11dp"
+                        android:id="@+id/imageView7"
+                        android:src="@drawable/more_comment_right"
+                        android:layout_alignRight="@+id/imageView5" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff8f8f8"
+                    android:id="@+id/lastCommentLO"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/photoLayout"
+                        android:layout_alignBottom="@+id/lastCommentLayout"
+                        android:layout_marginBottom="35dp"
+                        android:layout_marginRight="5dp">
+
+                        <co.roomapp.room.widget.RARoundImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cmtUserPhoto"
+                            android:src="@drawable/background" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/photoLayout"
+                        android:id="@+id/lastCommentLayout"
+                        android:padding="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/tailLayout"
+                            android:layout_alignBottom="@+id/commentBgLayout"
+                            android:layout_marginBottom="45dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/commentIndicator"
+                                android:src="@drawable/comment_indicator_right" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/commentBgLayout"
+                            android:layout_toLeftOf="@+id/tailLayout">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/commentFrame"
+                                android:src="@drawable/comment_bg"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="That sounds good"
+                                android:id="@+id/lastCommentText"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="Feburary 1st"
+                                android:id="@+id/lastcommentDate"
+                                android:layout_below="@+id/commentFrame"
+                                android:layout_alignRight="@+id/commentFrame"
+                                android:textSize="17sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/actionbg2"
+                android:id="@+id/bottomLayout"
+                android:layout_below="@+id/commentLayout1"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:id="@+id/btnLove"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/blue_heart"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="5dp"
+                    android:tint="#ffb3b3b3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/be_the_first_lover"
+                    android:id="@+id/loveDescription"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/btnLove"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/say_something"
+                    android:id="@+id/commentDesc"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:id="@+id/btnComment"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/commentDesc"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/comment_bubble"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:tint="#ffb3b3b3" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

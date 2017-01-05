@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="raBlue">#3a83c4</color>
+    <color name="raOrange">#ff6500</color>
+    <color name="ralightBlue">#5ab4fa</color>
+    <color name="rippelColor">#FFFFFF</color>
+    <color name="dark_grey_color">#4a636f</color>
+    <color name="light_blue_500">#03a9f4</color>
+    <color name="blue_gray">#4b636f</color>
+    <color name="light_gray">#f0f6f9</color>
+    <color name="dark_gray">#9baab2</color>
+    <color name="light_gray_bar">#eaf2f5</color>
+    <color name="header_normal">#ffffff</color>
+    <color name="header_pressed">#ffffff</color>
+    <color name="menu_section_header">#FFDDDDDD</color>
+</resources>

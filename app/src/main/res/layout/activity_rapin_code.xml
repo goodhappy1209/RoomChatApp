@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:paddingTop="@dimen/activity_pin_code_padding"
+        android:id="@+id/headerLayout">
+
+        <co.pincode.views.TypefaceTextView
+            android:id="@+id/pin_code_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:text="@string/room_pin_code"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/imageView12"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/one_pixel_line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/headerLayout"
+        android:background="#fff5f5f5"
+        android:id="@+id/passcodeInputLayout">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <co.pincode.views.TypefaceTextView
+                android:id="@+id/pin_code_step_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/pin_code_step_text_size"
+                android:text="@string/pin_code_step_create"
+                app:typeface="Roboto-Light.ttf" />
+
+            <co.pincode.views.PinCodeRoundView
+                android:id="@+id/pin_code_round_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pin_code_round_top_margin"
+                android:layout_marginBottom="@dimen/pin_code_elements_margin"
+                android:layout_below="@+id/pin_code_step_textview" />
+        </RelativeLayout>
+
+        <!--<co.pincode.views.TypefaceTextView-->
+            <!--android:id="@+id/pin_code_forgot_textview"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textColor="@color/dark_grey_color"-->
+            <!--android:textSize="@dimen/pin_code_forgot_text_size"-->
+            <!--android:text="@string/pin_code_forgot_text"-->
+            <!--android:singleLine="true"-->
+            <!--app:typeface="Roboto-Regular.ttf"-->
+            <!--android:layout_below="@+id/pin_code_round_view" />-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/pin_code_gray_bar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginTop="@dimen/light_gray_bar_margin_top"-->
+            <!--android:layout_marginBottom="@dimen/light_gray_bar_margin_bottom"-->
+            <!--android:layout_marginLeft="@dimen/light_gray_bar_margin_sides"-->
+            <!--android:layout_marginRight="@dimen/light_gray_bar_margin_sides"-->
+            <!--android:background="@color/light_gray_bar"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_below="@+id/pin_code_forgot_textview" />-->
+
+
+
+    </RelativeLayout>
+
+    <co.pincode.views.KeyboardView
+        android:id="@+id/pin_code_keyboard_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passcodeInputLayout"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:id="@+id/thumbnailView"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/clear_orange"
+        android:id="@+id/deleteThumbnail"
+        android:layout_alignParentRight="false"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:layout_alignRight="@+id/thumbnailView"
+        android:layout_marginRight="-20dp" />
+
+</RelativeLayout>

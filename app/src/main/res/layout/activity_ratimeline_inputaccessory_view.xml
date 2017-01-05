@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:background="#ffd6d6d6">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topLayout">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:id="@+id/progressBar" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnPostLayout"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/progressBar">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView8"
+                android:src="@drawable/circle_white"
+                android:layout_centerInParent="true" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="Post"
+                android:id="@+id/btnPost"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:id="@+id/edtMessageLayout"
+            android:layout_toLeftOf="@+id/btnPostLayout"
+            android:minHeight="70dp"
+            android:layout_below="@+id/progressBar">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView9"
+                android:src="@drawable/ti_tail_talk"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/imageView9"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/imageView10"
+                    android:src="@drawable/ti_bubble_normal"
+                    android:scaleType="fitXY" />
+
+                <co.roomapp.room.widget.RAHorizontalListView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/thumbnailScrollView"
+                    android:visibility="gone"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_alignParentTop="true" />
+
+                <co.roomapp.room.widget.RAMessageEditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/editMessage"
+                    android:layout_margin="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:enabled="true"
+                    android:editable="true"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:layout_below="@+id/thumbnailScrollView" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuLayout"
+        android:layout_below="@+id/topLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:id="@+id/menuframeLayout">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/btnStatusLayout">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/pi_btn_status"
+                    android:textColor="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/btnStatus" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/btnMediaLayout">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/pi_btn_pic"
+                    android:textColor="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/btnMedia" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/btnGalleryLayout">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/pi_btn_media"
+                    android:textColor="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/btnGallery" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/btnAudioLayout">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/pi_btn_audio"
+                    android:textColor="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/btnAudio" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/btnCheckinLayout">
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_button"
+                    android:src="@drawable/pi_btn_checkin"
+                    android:textColor="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/btnCheckin" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/menuframeLayout"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/underlineImg"
+                android:src="@drawable/pi_underline"
+                android:tint="#ff9c9797"
+                android:layout_marginLeft="21dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

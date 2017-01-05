@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/headerLayout"
+        android:id="@+id/photoLayout">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/bgPhoto"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView11"
+            android:background="#000000"
+            android:alpha="0.5" />
+
+        <co.roomapp.room.widget.RARoundImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/userPhoto"
+            android:src="@drawable/placeholder"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMedia"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/allmedia"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="30dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

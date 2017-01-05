@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:alpha="0.0"
+        android:id="@+id/bgLayout">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="false"
+            android:id="@+id/center"></RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tagline"
+            android:src="@drawable/startup_tagline"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout"
+            android:layout_alignParentTop="false"
+            android:layout_alignRight="@+id/tagline"
+            android:layout_alignEnd="@+id/tagline"
+            android:layout_alignParentEnd="false"
+            android:layout_alignBottom="@+id/center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logo"
+                android:src="@drawable/startup_logo"
+                android:layout_alignParentLeft="false"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/room"
+                android:src="@drawable/startup_room"
+                android:contentDescription=""
+                android:layout_marginBottom="0dp"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loader"
+            android:layout_below="@+id/tagline"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:max="100"
+            android:progress="0"
+            android:indeterminate="false" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg1"
+        android:orientation="vertical"
+        android:alpha="1.0"
+        android:id="@+id/bgLayout1">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg2"
+        android:orientation="vertical"
+        android:alpha="0.0"
+        android:id="@+id/bgLayout2">
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/myfourpanelpager"
+            android:layout_width="match_parent"
+            android:layout_height="520dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/bottomBar">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/pgdot2"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/pagedot" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/pgdot1"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/pgdot2"
+                android:layout_toStartOf="@+id/pgdot2"
+                android:background="@drawable/pagedot"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/pgdot3"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/pgdot2"
+                android:layout_toEndOf="@+id/pgdot2"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/pagedot" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip"
+                android:id="@+id/skipbutton"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="#ffffffff"
+                android:textSize="22dp"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="25dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

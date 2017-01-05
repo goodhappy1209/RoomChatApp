@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PinCodeView">
+        <attr name="typeface" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="KeyboardButtonView">
+        <attr name="keyboard_button_text" format="string" />
+        <attr name="keyboard_button_image" format="integer" />
+        <attr name="keyboard_button_ripple_enabled" format="boolean" />
+        <attr name="pin_forgot_dialog_title" format="string" />
+        <attr name="pin_forgot_dialog_content" format="string" />
+        <attr name="pin_forgot_dialog_positive" format="string" />
+        <attr name="pin_forgot_dialog_negative" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer"/>
+        <attr name="rv_rippleDuration" format="integer"/>
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0"/>
+            <enum name="doubleRipple" value="1"/>
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="StickyListHeadersListView">
+        <!-- View attributes -->
+        <attr name="android:clipToPadding" />
+        <attr name="android:scrollbars" />
+        <attr name="android:overScrollMode" />
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+
+        <!-- ListView attributes -->
+        <attr name="android:fadingEdgeLength" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:cacheColorHint" />
+        <attr name="android:choiceMode" />
+        <attr name="android:drawSelectorOnTop" />
+        <attr name="android:fastScrollEnabled" />
+        <attr name="android:fastScrollAlwaysVisible" />
+        <attr name="android:listSelector" />
+        <attr name="android:scrollingCache" />
+        <attr name="android:scrollbarStyle" />
+        <attr name="android:divider" />
+        <attr name="android:dividerHeight" />
+        <attr name="android:transcriptMode" />
+
+        <!-- StickyListHeaders attributes -->
+        <attr name="hasStickyHeaders" format="boolean" />
+        <attr name="isDrawingListUnderStickyHeader" format="boolean" />
+    </declare-styleable>
+
+</resources>

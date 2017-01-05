@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#72bffa"
+        android:id="@+id/header3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/title_section3"
+            android:id="@+id/ratitle3"
+            android:layout_alignParentTop="false"
+            android:textColor="#ffffffff"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="false"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/content3"
+        android:background="#ffffff">
+
+        <SearchView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/last_active_rooms"
+            android:id="@+id/lblActiverooms"
+            android:layout_below="@+id/searchView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/line"
+            android:layout_below="@+id/lblActiverooms"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/line" >
+
+            <GridView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/gridView"
+                android:numColumns="3" />
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

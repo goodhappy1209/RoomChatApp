@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Room</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_raregister_phone">What\'s your number?</string>
+    <string name="title_activity_raregister_code">What\'s the code?</string>
+    <string name="title_activity_raregister_name">What\'s your name?</string>
+    <string name="announce_activity_raregister_code">We sent you a verification code to +{0}</string>
+    <string name="nameplaceholder">Your Name or Nickname</string>
+    <string name="flag">flag</string>
+    <string name="read_and_agree_with_terms_and_privacy">Read and agree with <u>Terms and Privacy</u></string>
+    <string name="next">Next</string>
+    <string name="error">Error</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="Terms_and_Privacy">Terms and Privacy</string>
+    <string name="You_must_agree_to_the_Terms_and_Privacy">You must agree to the Terms and Privacy</string>
+    <string name="Please_enter_phone_number">Please enter phone number</string>
+    <string name="Re_Enter_Code">Re-Enter Code</string>
+    <string name="title_activity_ratab_bar">RATabBarActivity</string>
+    <string name="title_activity_tab_bar">TabBarActivity</string>
+    <string name="title_section1">My Rooms</string>
+    <string name="title_section2">My Chats</string>
+    <string name="title_section3">Explore</string>
+    <string name="title_section4">Settings</string>
+    <string name="title_tabbar_section1">Rooms</string>
+    <string name="title_tabbar_section2">Chats</string>
+    <string name="title_tabbar_section3">Explore</string>
+    <string name="title_tabbar_section4">Settings</string>
+    <string name="no_chat_conversations">No Chat Conversations</string>
+    <string name="create_your_first_room">Create Your First Room</string>
+    <string name="about_room">About Room</string>
+    <string name="tell_a_friend">Tell a Friend</string>
+    <string name="profile">Profile</string>
+    <string name="global_notifications">Global Notifications</string>
+    <string name="password_lock">Password Lock</string>
+    <string name="network_status">Network Status</string>
+    <string name="hey_name">hey {0}!!</string>
+    <string name="last_active_rooms">Last active rooms</string>
+    <string name="search_rooms_by_hashtags">Search rooms by hashtags</string>
+    <string name="search_room">Search Room</string>
+    <string name="join_room">Join Room</string>
+    <string name="be_the_first_lover">Be the first lover</string>
+    <string name="say_something">Say something...</string>
+
+    <string name="take_a_photo">Take a Photo</string>
+    <string name="take_a_video">Take a Video</string>
+    <string name="existing_pictures">Existing Pictures</string>
+    <string name="existing_video">Existing Video</string>
+
+    <string name="press_and_hold">Press and hold the red button to record</string>
+    <string name="done">Done</string>
+    <string name="hold">Hold</string>
+
+    <string name="where_are_you">Where are you?</string>
+    <string name="search_place_nearby">Search Place Nearby</string>
+
+    <string name="audio_message">Audio Message</string>
+    <string name="sec">sec</string>
+
+    <!--  About room -->
+
+    <string name="credits">Credits</string>
+    <string name="all_the_roomers">all the Roomers</string>
+    <string name="special_thanks_to_vicvic91">Special thanks to Vicvic91</string>
+    <string name="room_inc">© 2014 Room Inc.</string>
+
+    <!-- Setting room -->
+    <string name="check_out_room">Check out this awesome application Room</string>
+
+    <!-- Profile setting view -->
+    <string name="edit_your_profile">Edit Your Profile</string>
+
+
+    <string name="button1_large_text">1</string>
+    <string name="button2_large_text">2</string>
+    <string name="button2_small_text">ABC</string>
+    <string name="button3_large_text">3</string>
+    <string name="button3_small_text">DEF</string>
+    <string name="button4_large_text">4</string>
+    <string name="button4_small_text">GHI</string>
+    <string name="button5_large_text">5</string>
+    <string name="button5_small_text">JKL</string>
+    <string name="button6_large_text">6</string>
+    <string name="button6_small_text">MNO</string>
+    <string name="button7_large_text">7</string>
+    <string name="button7_small_text">PQRS</string>
+    <string name="button8_large_text">8</string>
+    <string name="button8_small_text">TUV</string>
+    <string name="button9_large_text">9</string>
+    <string name="button9_small_text">WXYZ</string>
+    <string name="button11_large_text">0</string>
+
+    <string name="pin_code_forgot_text">Forgot?</string>
+    <string name="pin_code_step_disable">Disable passcode</string>
+    <string name="pin_code_step_create">Enter a passcode</string>
+    <string name="pin_code_step_change">Enter your current passcode</string>
+    <string name="pin_code_step_unlock">Enter your passcode</string>
+    <string name="pin_code_step_enable_confirm">Confirm your passcode</string>
+    <string name="activity_not_locked_text">Nothing should happen on this page, here for test purpose</string>
+
+    <string name="room_pin_code">Room PIN Code</string>
+
+    <string name="room_guests">Room Guests</string>
+    <string name="search_guest">Search a guest</string>
+    <string name="pending_guests">Pending Invited Guests</string>
+    <string name="online">online</string>
+    <string name="offline">offline</string>
+
+    <string name="restore">Restore</string>
+    <string name="update">Update</string>
+    <string name="clear">Clear</string>
+    <string name="empty">Empty Adapter</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="options">OPTIONS</string>
+    <string name="actions">ACTIONS</string>
+    <string name="restore_list">Restore list</string>
+    <string name="open_expandable_list">Open expandable list</string>
+    <string name="update_list">Update list</string>
+    <string name="clear_list">Clear list</string>
+    <string name="sticky_header">Sticky header</string>
+    <string name="fade_header">Fade header</string>
+    <string name="draw_behind_header">Draw behind header</string>
+    <string name="fast_scroll">Fast scroll</string>
+
+    <string name="media_gallery">Media Gallery</string>
+
+</resources>

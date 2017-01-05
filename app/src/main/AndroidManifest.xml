@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.roomapp.room" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <activity
+        android:name="com.android.camera.Camera"
+        android:clearTaskOnLaunch="true"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"
+        android:taskAffinity="android.task.camera"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+    </activity>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".application.RoomApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/roomTheme" >
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCvJ5agJE3os7sTNL906saFDzWXGU37NRO"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".activity.RAStartupActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RAPaginationActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_raregister_phone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.RARegisterCodeActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_raregister_phone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.RARegisterPhoneActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_raregister_code"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.RARegisterNameActivity"
+            android:configChanges="orientation"
+            android:label="@string/title_activity_raregister_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".activity.RATabBarActivity"
+            android:label="@string/title_activity_tab_bar"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".activity.RARoomsActivity"
+            android:label=""
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".activity.RAChatsActivity"
+            android:label=""
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".activity.RAExploreActivity"
+            android:label=""
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".activity.RASettingsActivity"
+            android:label=""
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name=".activity.RATimelineActivity"
+            android:label=""
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name=".activity.RAAudioRecorderActivity"
+            android:label=""
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name=".activity.RAMapViewActivity"
+            android:label=""
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name=".activity.RAAboutRoomActivity"
+            android:label=""
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name=".activity.RAProfileSettingActivity"
+            android:label=""
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name=".activity.RAPinCodeActivity"
+            android:label=""
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name=".activity.RAChatActivity"
+            android:label=""
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity android:name=".activity.RAMediaGalleryActivity"
+            android:label=""
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+    </application>
+
+</manifest>

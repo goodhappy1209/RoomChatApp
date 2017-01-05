@@ -1,0 +1,911 @@
+
+"  offline" = "  offline";
+
+
+"  online" = "  online";
+
+
+" Pending Invited Guests" = " Pending Invited Guests";
+
+
+"%.01f sec" = "%.01f sec";
+
+
+"%.02fs" = "%.02fs";
+
+
+"%02d:%02d" = "%1$02d:%2$02d";
+
+
+"%02ld h %02ld min %02ld sec" = "%1$02ld h %2$02ld min %3$02ld sec";
+
+
+"%02ld min %02ld sec" = "%1$02ld min %2$02ld sec";
+
+
+"%02ld:%02ld" = "%1$02ld:%2$02ld";
+
+
+"%02ld:%02ld:%02ld" = "%1$02ld:%2$02ld:%3$02ld";
+
+
+"%@ a location" = "%@ a location";
+
+
+"%@ a picture" = "%@ a picture";
+
+
+"%@ a video" = "%@ a video";
+
+
+"%@ an audio message" = "%@ an audio message";
+
+
+"%@ and %i other guests need an SMS invitation to join your Room." = "%1$@ and %2$i other guests need an SMS invitation to join your Room.";
+
+
+"%@ commented %@'s post with a photo album (%d comments)" = "%1$@ commented %2$@'s post with a photo album (%3$d comments)";
+
+
+"%@ commented %@'s post with an audio message (%d comments)" = "%1$@ commented %2$@'s post with an audio message (%3$d comments)";
+
+
+"%@ commented %@'s post with map (%d comments)" = "%1$@ commented %2$@'s post with map (%3$d comments)";
+
+
+"%@ commented %@'s post with picture (%d comments)" = "%1$@ commented %2$@'s post with picture (%3$d comments)";
+
+
+"%@ commented %@'s post with video (%d comments)" = "%1$@ commented %2$@'s post with video (%3$d comments)";
+
+
+"%@ commented %@'s post: \"%@...\" (%d comments)" = "%1$@ commented %2$@'s post: \"%3$@...\" (%4$d comments)";
+
+
+"%@ liked your post" = "%@ liked your post";
+
+
+"%@ multiple pictures" = "%@ multiple pictures";
+
+
+"%@ needs a SMS invitation to join your Room." = "%@ needs a SMS invitation to join your Room.";
+
+
+"%@ posted a new comment" = "%@ posted a new comment";
+
+
+"%@ posted a new message" = "%@ posted a new message";
+
+
+"%@ posted a new story: \"%@...\"" = "%1$@ posted a new story: \"%2$@...\"";
+
+
+"%@ posted a picture" = "%@ posted a picture";
+
+
+"%@ posted a place" = "%@ posted a place";
+
+
+"%@ posted a video" = "%@ posted a video";
+
+
+"%@ posted an album" = "%@ posted an album";
+
+
+"%@ posted an audio message" = "%@ posted an audio message";
+
+
+"%@ requested to join the room." = "%@ requested to join the room.";
+
+
+"%@, tell me why you would like to join this room (optional)" = "%@, tell me why you would like to join this room (optional)";
+
+
+"%d comment" = "%d comment";
+
+
+"%d days ago" = "%d days ago";
+
+
+"%d days old" = "%d days old";
+
+
+"%d hours ago" = "%d hours ago";
+
+
+"%d loves" = "%d loves";
+
+
+"%d min ago" = "%d min ago";
+
+
+"%d minutes ago" = "%d minutes ago";
+
+
+"%d months ago" = "%d months ago";
+
+
+"%d months old" = "%d months old";
+
+
+"%d more comment" = "%d more comment";
+
+
+"%d more comments" = "%d more comments";
+
+
+"%d seconds ago" = "%d seconds ago";
+
+
+"%d weeks ago" = "%d weeks ago";
+
+
+"%d years ago" = "%d years ago";
+
+
+"%d years old" = "%d years old";
+
+
+"%d/%d" = "%1$d/%2$d";
+
+
+"1 day old" = "1 day old";
+
+
+"1 love" = "1 love";
+
+
+"1 month old" = "1 month old";
+
+
+"1 year old" = "1 year old";
+
+
+"\"%@\": Knock Knock!!" = "\"%@\": Knock Knock!!";
+
+
+"\"%@\": Request Accepted!!" = "\"%@\": Request Accepted!!";
+
+
+"a day old" = "a day old";
+
+
+"About an hour ago" = "About an hour ago";
+
+
+"Accept" = "Accept";
+
+
+"add a Room description..." = "add a Room description...";
+
+
+"advanced setting for your social room." = "advanced setting for your social room.";
+
+
+"Alert" = "Alert";
+
+
+"All Contacts" = "All Contacts";
+
+
+"Are you sure?" = "Are you sure?";
+
+
+"Audio Message" = "Audio Message";
+
+
+"Be the first to love this story" = "Be the first to love this story";
+
+
+"by %@" = "by %@";
+
+
+"By turning off the notifications you will not receive any alerts for new activity in your Rooms. We recommend to to just mute the Rooms and the messages that disturb you." = "By turning off the notifications you will not receive any alerts for new activity in your Rooms. We recommend to to just mute the Rooms and the messages that disturb you.";
+
+
+"Call %@" = "Call %@";
+
+
+"Camera" = "Camera";
+
+
+"Camera not found" = "Camera not found";
+
+
+"Cancel" = "Cancel";
+
+
+"Cellular" = "Cellular";
+
+
+"Chats" = "Chats";
+
+
+"Check out this awesome application Room" = "Check out this awesome application Room";
+
+
+"Choose an existing one" = "Pick an existing one";
+
+
+"Choose an existing one. Boooo!" = "Pick an existing one";
+
+
+"Come see what's happening in this room \"%@\"! Join me at %@" = "Come see what's happening in this room \"%1$@\"! Join me at %2$@";
+
+
+"Come see what's happening in this room \"%@\"! Join me at %@ #RoomID %@" = "Come see what's happening in this room \"%1$@\"! Join me at %2$@ #RoomID %3$@";
+
+
+"Comments" = "Comments";
+
+
+"Congratulation!" = "Congratulation!";
+
+
+"Congratulations! You Room is Created." = "Congratulations! You Room is Created.";
+
+
+"Contacts" = "Contacts";
+
+
+"Contacts with Room" = "Contacts with Room";
+
+
+"Copy Photo" = "Copy Photo";
+
+
+"Create a New Room" = "Create a New Room";
+
+
+"Create a new Room" = "Create a new Room";
+
+
+"Create the first room for #%@" = "Create the first room for #%@";
+
+
+"Decline" = "Decline";
+
+
+"Delete" = "Delete";
+
+
+"Do you know the Room Key?" = "Do you know the Room Key?";
+
+
+"Edit Your Profile" = "Edit Your Profile";
+
+
+"edit your room ID and room Key." = "edit your room ID and room Key.";
+
+
+"edit your room name and your cover pic." = "edit your room name and your cover pic.";
+
+
+"eee h:mm a" = "eee h:mm a";
+
+
+"eeee" = "eeee";
+
+
+"EEEE, MMMM dd" = "EEEE, MMMM dd";
+
+
+"Error" = "Error";
+
+
+"Error connecting" = "Error connecting";
+
+
+"Existing Pictures" = "Existing Pictures";
+
+
+"Existing Video" = "Existing Video";
+
+
+"Explore" = "Explore";
+
+
+"Explore the Rooms" = "Explore the Rooms";
+
+
+"Failed to send SMS!" = "Failed to send SMS!";
+
+
+"Flag" = "Flag";
+
+
+"Flag for removal" = "Flag for removal";
+
+
+"Free" = "Free";
+
+
+"GKIcancel" = "Cancel";
+
+
+"GKIchoosePhoto" = "Choose";
+
+
+"GKImoveAndScale" = "Edit";
+
+
+"GKIuse" = "Ok";
+
+
+"h:mm a" = "h:mm a";
+
+
+"help others to find your room. Add hashtags, separate them by a space (#room #cool)." = "help others to find your room. Add hashtags, separate them by a space (#room #cool).";
+
+
+"Hey %@!" = "Hey %@!";
+
+
+"Hey! join my Room \"%@\". I just created it so we can share things privately. What happens in the Room, stays in the Room... :) http://roomapp.co/download" = "Hey! join my Room \"%@\". I just created it so we can share things privately. What happens in the Room, stays in the Room... :) http://roomapp.co/download";
+
+
+"Host a Room" = "Host a Room";
+
+
+"If you delete this Room, all stories will be removed and current guests will no longer have access." = "If you delete this Room, all stories will be removed and current guests will no longer have access.";
+
+
+"Invitation-Only Room" = "Invitation-Only Room";
+
+
+"Invitations" = "Invitations";
+
+
+"Inviting your guests" = "Inviting your guests";
+
+
+"Join" = "Join";
+
+
+"Join a Room" = "Join a Room";
+
+
+"Join a Social Room" = "Join a Social Room";
+
+
+"Join me in this room \"%@\" #RoomID %@" = "Join me in this room \"%1$@\" #RoomID %2$@";
+
+
+"Join Room" = "Join Room";
+
+
+"Join this Social Room. Download Room now at %@" = "Join this Social Room. Download Room now at %@";
+
+
+"Joining ..." = "Joining ...";
+
+
+"Just now" = "Just now";
+
+
+"Kick" = "Kick";
+
+
+"Knock Knock" = "Knock Knock";
+
+
+"Last activity: %@" = "Last activity: %@";
+
+
+"Last activity: None" = "Last activity: None";
+
+
+"Last Seen %@" = "Last Seen %@";
+
+
+"Leave" = "Leave";
+
+
+"Less" = "Less";
+
+
+"Load more messages" = "Load more messages";
+
+
+"Loading..." = "Loading...";
+
+
+"M/d/yy" = "M/d/yy";
+
+
+"M/d/yy h:mm a" = "M/d/yy h:mm a";
+
+
+"MM/dd/yy" = "MM/dd/yy";
+
+
+"MMM dd, yyyy" = "MMM dd, yyyy";
+
+
+"More" = "More";
+
+
+"Mute" = "Mute";
+
+
+"My Chats" = "My Chats";
+
+
+"My Rooms" = "My Rooms";
+
+
+"Network Error" = "Network Error";
+
+
+"Never" = "Never";
+
+
+"NO" = "NO";
+
+
+"No Connection" = "No Connection";
+
+
+"No key? Knock to enter" = "No key? Knock to enter";
+
+
+"No more messages" = "No more messages";
+
+
+"No tags found" = "No tags found";
+
+
+"Not bad for a Selfie!" = "Not bad for a Selfie!";
+
+
+"Notifications" = "Notifications";
+
+
+"Notify me when a room #%@ is created" = "Notify me when a room #%@ is created";
+
+
+"Offline" = "Offline";
+
+
+"OK" = "OK";
+
+
+"Ok" = "Ok";
+
+
+"Online" = "Online";
+
+
+"perfect for conferences, parties, wedding, hobbies.." = "perfect for conferences, parties, wedding, hobbies..";
+
+
+"perfect for exclusive groups, friends, family, colleagues..." = "perfect for exclusive groups, friends, family, colleagues...";
+
+
+"Pick an existing one" = "Pick an existing one";
+
+
+"Pictures!" = "Pictures!";
+
+
+"Please add a cover picture" = "Please add a cover picture";
+
+
+"Please enter a room name" = "Please enter a room name";
+
+
+"Please enter a Room name" = "Please enter a Room name";
+
+
+"Please enter phone number" = "Please enter phone number";
+
+
+"Please enter verification code" = "Please enter verification code";
+
+
+"Please enter your name" = "Please enter your name";
+
+
+"Post something now!" = "Post something now!";
+
+
+"posted %@" = "posted %@";
+
+
+"posted a picture" = "posted a picture";
+
+
+"posted a place" = "posted a place";
+
+
+"posted a video" = "posted a video";
+
+
+"posted an album" = "posted an album";
+
+
+"posted an audio message" = "posted an audio message";
+
+
+"protect this room with a password." = "protect this room with a password.";
+
+
+"Re-Enter Code" = "Re-Enter Code";
+
+
+"Remove from the room" = "Remove from the room";
+
+
+"Request to enter" = "Request to enter";
+
+
+"Requesting ..." = "Requesting ...";
+
+
+"Resend" = "Resend";
+
+
+"Resend Code" = "Resend Code";
+
+
+"resending your phone number..." = "resending your phone number...";
+
+
+"restaurant" = "restaurant";
+
+
+"Retry" = "Retry";
+
+
+"Room Activity" = "Room Activity";
+
+
+"Room ID & Room Key" = "Room ID & Room Key";
+
+
+"Room Invitation" = "Room Invitation";
+
+
+"Room Key" = "Room Key";
+
+
+"Room Name & Picture" = "Room Name & Picture";
+
+
+"Room Passcode" = "Room Passcode";
+
+
+"Room PIN Code" = "Room PIN Code";
+
+
+"Room PIN code" = "Room PIN code";
+
+
+"Rooms" = "Rooms";
+
+
+"Save Photo" = "Save Photo";
+
+
+"Saving your profile..." = "Saving your profile...";
+
+
+"Search for \"#%@\"" = "Search for \"#%@\"";
+
+
+"Search Room" = "Search Room";
+
+
+"Search rooms by hashtags" = "Search rooms by hashtags";
+
+
+"searching ..." = "searching ...";
+
+
+"Searching Rooms ..." = "Searching Rooms ...";
+
+
+"See console for error details." = "See console for error details.";
+
+
+"See who has Room and start a private chat" = "See who has Room and start a private chat";
+
+
+"Send Invites" = "Send Invites";
+
+
+"Setting up this room..." = "Setting up this room...";
+
+
+"Settings" = "Settings";
+
+
+"Share a Social Room" = "Share a Social Room";
+
+
+"Share the room with your friends and other social media" = "Share the room with your friends and other social media";
+
+
+"Share With Room Key" = "Share With Room Key";
+
+
+"Share Without Room Key" = "Share Without Room Key";
+
+
+"Social Room" = "Social Room";
+
+
+"Social Room KEY" = "Social Room KEY";
+
+
+"Social Room Settings" = "Social Room Settings";
+
+
+"Swipe Left (←) to change the style of the message bubble (normal, thinking or shouting)" = "Swipe Left (←) to change the style of the message bubble (normal, thinking or shouting)";
+
+
+"Swipe Left (←) to delete, mute or flag a message" = "Swipe Left (←) to delete, mute or flag a message";
+
+
+"Swipe Left to reveal options" = "Swipe Left to reveal options";
+
+
+"Swipe Right (→) to see the last message in the room" = "Swipe Right (→) to see the last message in the room";
+
+
+"Swipe Right to go back" = "Swipe Right to go back";
+
+
+"Take a cover Room Picture" = "Take a cover Room Picture";
+
+
+"Take a nice Selfie!" = "Take a nice Selfie!";
+
+
+"Take a Photo" = "Take a Photo";
+
+
+"Take a Video" = "Take a Video";
+
+
+"Tap or Swipe Left (←) to view all the members in this room and to private chat with them" = "Tap or Swipe Left (←) to view all the members in this room and to private chat with them";
+
+
+"Tap to create a new post" = "Tap to create a new post";
+
+
+"Tap to see all the photos and videos in this room" = "Tap to see all the photos and videos in this room";
+
+
+"Terms and Privacy" = "Terms and Privacy";
+
+
+"Text %@" = "Text %@";
+
+
+"Thank You" = "Thank You";
+
+
+"Thank You, we've received your flag. We informed the host and we will take the necessary measures within 24 hours." = "Thank You, we've received your flag. We informed the host and we will take the necessary measures within 24 hours.";
+
+
+"Thank You, we've received your flag. We will take the necessary measures within 24 hours." = "Thank You, we've received your flag. We will take the necessary measures within 24 hours.";
+
+
+"The room \"%@\" has been successfully created." = "The room \"%@\" has been successfully created.";
+
+
+"The room \"%@\" is being created." = "The room \"%@\" is being created.";
+
+
+"This room has ben deleted or you don't have enough rights to stay inside. You are going to be redirected to your Rooms' list." = "This room has ben deleted or you don't have enough rights to stay inside. You are going to be redirected to your Rooms' list.";
+
+
+"This story has been deleted by it's owner, you are going to be redirected to the room's timeline" = "This story has been deleted by it's owner, you are going to be redirected to the room's timeline";
+
+
+"Tips" = "Tips";
+
+
+"Turn Off" = "Turn Off";
+
+
+"Turn On" = "Turn On";
+
+
+"typing..." = "typing...";
+
+
+"Unmute" = "Unmute";
+
+
+"updating your room..." = "updating your room...";
+
+
+"Uploading ..." = "Uploading ...";
+
+
+"Validating code..." = "Validating code...";
+
+
+"Validating your phone number ..." = "Validating your phone number ...";
+
+
+"Videos!" = "Videos!";
+
+
+"Wanna see what's happening in the room \"%@\". Download Room now at %@" = "Wanna see what's happening in the room \"%1$@\". Join me now %2$@";
+
+
+"We sent you a verification code to +%@" = "We sent you a verification code to +%@";
+
+
+"Welcome to Room" = "Welcome to Room";
+
+
+"WiFi" = "WiFi";
+
+
+"with %@" = "with %@";
+
+
+"Would you like to flag this message and report inappriate content?. You will stop receiving remote notifications for this room." = "Would you like to flag this message and report inappriate content?. You will stop receiving remote notifications for this room.";
+
+
+"Would you like to mute the room %@. You will stop receiving remote notifications for this room." = "Would you like to mute the room %@. You will stop receiving remote notifications for this room.";
+
+
+"Would you like to mute this message. You will stop receiving remote notifications for this room." = "Would you like to mute this message. You will stop receiving remote notifications for this room.";
+
+
+"Would you like to report this room?" = "Would you like to report this room?";
+
+
+"Would you like to unmute the room %@. You will now receive remote notifications for this room." = "Would you like to unmute the room %@. You will now receive remote notifications for this room.";
+
+
+"Would you like to unmute this message. You will now receive remote notifications for this room." = "Would you like to unmute this message. You will now receive remote notifications for this room.";
+
+
+"Wrong video format" = "Wrong video format";
+
+
+"Yest %@" = "Yest %@";
+
+
+"Yesterday" = "Yesterday";
+
+
+"You and %d others love this story" = "You and %d others love this story";
+
+
+"You and 1 other love this story" = "You and 1 other love this story";
+
+
+"You are about to delete this chat conversation. Everything will be lost." = "You are about to delete this chat conversation. Everything will be lost.";
+
+
+"You are about to delete this comment from your timeline." = "You are about to delete this comment from your timeline.";
+
+
+"You are about to delete this comment. Nobody in the room will be able to see it anymore." = "You are about to delete this comment. Nobody in the room will be able to see it anymore.";
+
+
+"You are about to delete this invitation." = "You are about to delete this invitation.";
+
+
+"You are about to delete this message and all the associated comments. Nobody in the room will be able to see it anymore." = "You are about to delete this message and all the associated comments. Nobody in the room will be able to see it anymore.";
+
+
+"You are about to delete this message from your timeline." = "You are about to delete this message from your timeline.";
+
+
+"You are about to delete this message. Nobody in the room will be able to see it anymore." = "You are about to delete this message. Nobody in the room will be able to see it anymore.";
+
+
+"You are about to kick this user out of the room." = "You are about to kick this user out of the room.";
+
+
+"You are about to leave the Room. You can rejoin by clicking “Join a Room” and by entering the Room access codes." = "You are about to leave the Room. You can rejoin by clicking “Join a Room” and by entering the Room access codes.";
+
+
+"You are about to resend the invitation to %@" = "You are about to resend the inviation to %@";
+
+
+"You are about to turn on all notifications for Room." = "You are about to turn on all notifications for Room.";
+
+
+"You are currently not connected to the server. Please check your Internet connection" = "You are currently not connected to the server. Please check your Internet connection";
+
+
+"You can only add %d pictures." = "You can only add %d pictures.";
+
+
+"You have been invited by %@ to join the room %@" = "You have been invited by %1$@ to join the room %2$@";
+
+
+"You love this story" = "You love this story";
+
+
+"You must agree to the Terms and Privacy" = "You must agree to the Terms and Privacy";
+
+
+"You received" = "You received";
+
+
+"You sent" = "You sent";
+
+
+"You will not be able to re-join the room until the host invites you back." = "You will not be able to re-join the room until the host invites you back.";
+
+
+"Your Current Position" = "Your Current Position";
+
+
+"Your device doesn't support SMS!" = "Your device doesn't support SMS!";
+
+
+"Your first room.\nSwipe Left (←) to delete, invite more people and mute/unmute the room" = "Your first room.\nSwipe Left (←) to delete, invite more people and mute/unmute the room";
+
+
+"Your request has been sent." = "Your request has been sent.";
+
+
+"Your request has been sent. You will receive a notification when the room admin will accept it." = "Your request has been sent. You will receive a notification when the room admin will accept it.";
+
+
+"Your room is getting ready..." = "Your room is getting ready...";
+
+"You received user requests to join your rooms. Please accept or reject them." = "You received user requests to join your rooms. Please accept or reject them.";
+
+"In order to use Room, you MUST allow us to access your contacts otherwise this app won't work.\n\nThe access is solely to enable the chat and the access to the rooms."= "In order to use Room, you MUST allow us to access your contacts otherwise this app won't work.\n\nThe access is solely to enable the chat and the access to the rooms.";
+
+"Skip" = "Skip";
+
+"Tap to continue" = "Tap to continue";
+
+"Share the Room ID with or without the Room Key." = "Share the Room ID with or without the Room Key.";
+
+"Save Room Cover" = "Save Room Cover";
+
+
+"%@ commented with a picture (%@)" = "%@ commented with a picture (%@)";
+"%@ commented with a location (%@)" = "%@ commented with a location (%@)";
+"%@ commented with a video (%@)" = "%@ commented with a video (%@)";
+"%@ commented with an audio message (%@)" = "%@ commented with an audio message (%@)";
+"%@ commented with a photo album (%@)" = "%@ commented with a photo album (%@)";
+"%@ commented a story (%@)" = "%@ commented a story (%@)";
+
+"%@ commented with a picture" = "%@ commented with a picture";
+"%@ commented with a location" = "%@ commented with a location";
+"%@ commented with a video" = "%@ commented with a video";
+"%@ commented with an audio message" = "%@ commented with an audio message";
+"%@ commented with a photo album" = "%@ commented with a photo album";
+"%@ commented a story" = "%@ commented a story";
+
+"%@ posted a picture (%@)" = "%@ posted a picture (%@)";
+"%@ posted a new location (%@)" = "%@ posted a new location (%@)";
+"%@ posted a video (%@)" = "%@ posted a video (%@)";
+"%@ posted an audio message (%@)" = "%@ posted an audio message (%@)";
+"%@ posted a photo album (%@)" = "%@ posted a photo album (%@)";
+"%@ posted a new story (%@)" = "%@ posted a new story (%@)";
+
+"%@ posted a picture" = "%@ posted a picture";
+"%@ posted a new location" = "%@ posted a new location";
+"%@ posted a video" = "%@ posted a video";
+"%@ posted an audio message" = "%@ posted an audio message";
+"%@ posted a photo album" = "%@ posted a photo album";
+"%@ posted a new story" = "%@ posted a new story";
+
+
+//NEW
+
+"Touch the star to rate." = "Touch the star to rate.";
+"Rate" = "Rate";
+"Not Now" = "Not Now";
+"Write a review on the AppStore" = "Write a review on the AppStore";
+"Would you mind taking a moment to rate it on the AppStore? It won’t take more than a minute. Thanks for your support!" = "Would you mind taking a moment to rate it on the AppStore? It won’t take more than a minute. Thanks for your support!";
+"Rate It Now" = "Rate It Now";
+"Disadvantages" = "Disadvantages";
+"Please specify the deficiencies in the application. We will try to fix it!" = "Please specify the deficiencies in the application. We will try to fix it!";
+"Sending error" = "Sending error";

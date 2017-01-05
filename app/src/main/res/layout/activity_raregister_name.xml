@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="co.roomapp.room.activity.RARegisterPhoneActivity"
+    android:id="@+id/regcodeRootLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/regnameBlackLayout"
+        android:background="#ff000000"
+        android:alpha="0.0">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:id="@+id/regcodebgLayout">
+
+        <co.roomapp.room.widget.RALabelTitleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_raregister_name"
+            android:id="@+id/roomTitle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif"
+            android:focusable="false"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffffff" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/imageView"
+            android:layout_marginTop="11dp"
+            android:background="#FFFFFF"
+            android:layout_below="@+id/roomTitle"
+            android:layout_centerHorizontal="true" />
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginTop="50dp"
+            android:id="@+id/linearLayout"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/edtName"
+                android:phoneNumber="false"
+                android:textSize="24dp"
+                android:textIsSelectable="true"
+                android:textColor="#FFFFFF"
+                android:textCursorDrawable="@null"
+                android:autoText="false"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:editable="false"
+                android:enabled="true"
+                android:clickable="true"
+                android:background="@null"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:hint="@string/nameplaceholder"
+                android:textColorHint="#ffffffff"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/linearLayout"
+            android:focusableInTouchMode="false">
+
+            <Button
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:text="Done"
+                android:id="@+id/btnDone"
+                android:background="@drawable/btn_circle_white_bg"
+                android:textColor="@color/raBlue"
+                android:textStyle="normal"
+                android:visibility="invisible"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="false"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:name="co.roomapp.room.activity.RARegNameBottomMenuFragment"
+        android:layout_height="wrap_content"
+        android:id="@+id/regnameBottomMenuFrag"
+        android:layout_alignParentBottom="true">
+
+    </fragment>
+
+</RelativeLayout>

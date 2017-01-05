@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+    Copyright (c) 2010 Josh Clemm
+    -->
+<selector
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:state_selected="true"
+		android:color="@color/ralightBlue" />
+
+    <item android:state_selected="false"
+        android:color="#b8b8b8" />
+
+</selector>

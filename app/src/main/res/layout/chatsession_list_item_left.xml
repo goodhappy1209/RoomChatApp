@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffebebeb"
+        android:id="@+id/messageLayout"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/photoLayout"
+            android:layout_alignBottom="@+id/msgContentLayout"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <co.roomapp.room.widget.RARoundImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cmtUserPhoto"
+                android:src="@drawable/background" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/photoLayout"
+            android:id="@+id/msgContentLayout"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/tailLayout"
+                android:layout_alignBottom="@+id/messageBgLayout"
+                android:layout_marginBottom="34dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/commentIndicator"
+                    android:src="@drawable/ti_tail_talk" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/messageBgLayout"
+                android:layout_toRightOf="@+id/tailLayout">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignBottom="@+id/msgLayout"
+                    android:id="@+id/messageFrame">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/frameImage"
+                        android:src="@drawable/ti_bubble_normal"
+                        android:scaleType="fitXY" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/msgThumbLayout"
+                    android:background="@android:color/transparent"
+                    android:visibility="visible"
+                    android:padding="5dp"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="260dp"
+                        android:id="@+id/msgThumbnail"
+                        android:layout_alignParentTop="true"
+                        android:minHeight="80dp"
+                        android:visibility="visible"
+                        android:src="@drawable/startup_logo"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/playLayout"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnPlay"
+                            android:src="@drawable/button_play_video"
+                            android:background="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/gridLayout"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <GridView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/gridView"
+                            android:numColumns="3"
+                            android:horizontalSpacing="15dp"
+                            android:verticalSpacing="15dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/msgLayout"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/msgThumbLayout">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="That sounds good"
+                        android:id="@+id/msgText"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18sp"
+                        android:minHeight="50dp"
+                        android:padding="5dp"
+                        android:visibility="visible"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/msgText"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/audioLayout"
+                        android:visibility="visible"
+                        android:layout_marginTop="10dp">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnAudioPlay"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/button_play_video"
+                            android:background="@android:color/transparent" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/btnAudioPlay"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/audio_message"
+                                android:id="@+id/textView6"
+                                android:layout_marginTop="5dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="7.2 sec"
+                                android:id="@+id/durationLabel"
+                                android:layout_marginTop="5dp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Feburary 1st"
+                    android:id="@+id/msgDate"
+                    android:textSize="17sp"
+                    android:layout_below="@+id/messageFrame" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

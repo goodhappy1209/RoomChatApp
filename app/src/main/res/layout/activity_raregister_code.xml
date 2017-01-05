@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="co.roomapp.room.activity.RARegisterPhoneActivity"
+    android:id="@+id/regcodeRootLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/regcodebgLayout">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBack"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:cropToPadding="false"
+            android:src="@drawable/backbutton"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="10dp" />
+
+        <co.roomapp.room.widget.RALabelTitleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_raregister_code"
+            android:id="@+id/roomTitle"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif"
+            android:focusable="false"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffffff" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/imageView"
+            android:layout_marginTop="11dp"
+            android:background="#FFFFFF"
+            android:layout_below="@+id/roomTitle"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/announce_activity_raregister_code"
+            android:id="@+id/labelSentNumber"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="18dp"
+            android:textSize="15dp"
+            android:textColor="#ffffffff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginTop="70dp"
+            android:id="@+id/linearLayout"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/edtName"
+                android:phoneNumber="true"
+                android:textSize="20dp"
+                android:textIsSelectable="true"
+                android:textColor="#FFFFFF"
+                android:textCursorDrawable="@null"
+                android:autoText="false"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:editable="false"
+                android:enabled="true"
+                android:clickable="true"
+                android:background="@null"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView4"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/edtName"
+                android:layout_toStartOf="@+id/edtName"
+                android:background="@drawable/iconpass"
+                android:layout_marginRight="10dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_below="@+id/linearLayout"
+            android:focusableInTouchMode="false">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend code"
+                android:id="@+id/btnResendcode"
+                android:textColor="#ffffffff"
+                android:background="@android:color/transparent"
+                android:layout_alignParentLeft="false"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp" />
+
+            <Button
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:text="Next"
+                android:id="@+id/btnNext"
+                android:background="@drawable/btn_circle_white_bg"
+                android:textColor="@color/raBlue"
+                android:textStyle="normal"
+                android:visibility="invisible"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

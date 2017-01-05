@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".RAAboutRoom"
+    android:padding="0dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tagline"
+        android:layout_alignEnd="@+id/tagline"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="@dimen/test_margin" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:src="@drawable/startup_logo"
+            android:layout_alignParentLeft="false"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="20dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/room"
+            android:src="@drawable/startup_room"
+            android:contentDescription=""
+            android:layout_marginBottom="0dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tagline"
+        android:src="@drawable/startup_tagline"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/credits"
+        android:id="@+id/creditsLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tagline"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:typeface="sans" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/all_the_roomers"
+        android:id="@+id/alltheRoomersLabel"
+        android:layout_below="@+id/creditsLabel"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/special_thanks_to_vicvic91"
+        android:id="@+id/thanksLabel"
+        android:layout_below="@+id/alltheRoomersLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="v2.0.1"
+        android:id="@+id/versionLabel"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/room_inc"
+        android:id="@+id/roomIncLabel"
+        android:layout_above="@+id/versionLabel"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btnOk"
+        android:layout_above="@+id/roomIncLabel"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/done"
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="3dp" />
+
+
+</RelativeLayout>
